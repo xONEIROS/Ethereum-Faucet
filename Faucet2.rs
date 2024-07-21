@@ -1,7 +1,6 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
 use ink_lang as ink;
-
 #[ink::contract]
 mod faucet {
     use ink_storage::traits::SpreadAllocate;
@@ -15,7 +14,6 @@ mod faucet {
         withdrawal_limit: Balance,
         emergency_stop: bool,
     }
-
     #[ink(event)]
     pub struct Withdrawal {
         #[ink(topic)]
@@ -42,7 +40,6 @@ mod faucet {
                 emergency_stop: false,
             }
         }
-
         #[ink(message)]
         pub fn withdraw(&mut self) {
             let caller = self.env().caller();
