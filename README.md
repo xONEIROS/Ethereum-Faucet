@@ -169,7 +169,7 @@ The HTML frontend has been updated to improve its appearance and functionality.
 3. Use the "Request Ether" and "Donate Ether" buttons to interact with the smart contract.
 
 
-# version 0.001
+# version 0.002
 Here's an enhanced version of the given Rust code for the Ethereum Faucet using the `ink!` framework. The improvements include additional functionality such as setting withdrawal limits, checking the contract balance, and adding an emergency stop mechanism.
 
 ```rust
